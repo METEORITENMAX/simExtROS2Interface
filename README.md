@@ -25,3 +25,12 @@ VERBOSE=1 MAKEFLAGS=-j1 colcon build --symlink-install --event-handlers console_
 ```
 
 Add `--cmake-args -DCMAKE_BUILD_TYPE=Debug` if you are encountering a runtime error (e.g. crash, unexpected behavior, etc...).
+
+In order to build a ".so" file used by CoppeliaSim:
+````
+$ export COPPELIASIM_ROOT_DIR=~/path/to/coppeliaSim/folder
+
+$ ulimit -s unlimited #otherwise compilation might freeze/crash
+
+$ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+````
