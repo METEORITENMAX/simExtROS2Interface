@@ -12,7 +12,7 @@
 
 #include "config.h"
 
-#include <image_transport/image_transport.hpp>
+#include <image_transport/image_transport.h>
 
 #define PLUGIN_NAME "Ros2Interface"
 #define PLUGIN_VERSION 5

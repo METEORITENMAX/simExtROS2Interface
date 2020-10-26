@@ -7,7 +7,7 @@
         auto cli = boost::any_cast< std::shared_ptr< rclcpp_action::Client<`interface.cpp_type`> > >(actionClientProxy->action_client);
         auto gh = boost::any_cast< rclcpp_action::ClientGoalHandle<`interface.cpp_type`>::SharedPtr >(actionClientProxy->last_goal_handle);
         auto cancel_result_future = cli->async_cancel_goal(gh);
-        if(rclcpp::spin_until_future_complete(node, cancel_result_future) != rclcpp::FutureReturnCode::SUCCESS)
+        if(rclcpp::spin_until_future_complete(node, cancel_result_future) != rclcpp::executor::FutureReturnCode::SUCCESS)
         {
             out->success = false;
         }
