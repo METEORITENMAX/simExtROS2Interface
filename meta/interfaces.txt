@@ -4,9 +4,11 @@ geometry_msgs/msg/Quaternion
 geometry_msgs/msg/Transform
 geometry_msgs/msg/TransformStamped
 geometry_msgs/msg/Vector3
+geometry_msgs/msg/Twist
 sensor_msgs/msg/Image
 sensor_msgs/msg/PointCloud2
 sensor_msgs/msg/PointField
+sensor_msgs/msg/LaserScan
 std_msgs/msg/Bool
 std_msgs/msg/Byte
 std_msgs/msg/ColorRGBA
@@ -26,5 +28,10 @@ std_msgs/msg/UInt64
 std_srvs/srv/Empty
 std_srvs/srv/SetBool
 std_srvs/srv/Trigger
+geometry_msgs/msg/Point
+geometry_msgs/msg/Pose
+geometry_msgs/msg/PoseWithCovariance
+geometry_msgs/msg/TwistWithCovariance
+nav_msgs/msg/Odometry
 example_interfaces/srv/AddTwoInts
 example_interfaces/action/Fibonacci
